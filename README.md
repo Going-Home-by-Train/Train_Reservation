@@ -4,27 +4,16 @@
 
 1. 🖥️프로젝트 소개 
 2. 📒설계
-    
     2-1. 개발 환경
-    
     2-2. 아키텍처
-    
     2-3. 테이블 설계
-    
 3. 🧑‍💻개발
-    
-    3-1. 데이터베이스 생 및 사용자 생성
-    
+    3-1. 데이터베이스 생 및 사용자 생성 
     3-2. 테이블 생성(DDL)
-    
     3-3. 생성형 AI 사용하여 더미데이터 생성 후 데이터 삽입
-    
 4. 💡정규 표현식 활용 문제
-    
     4-1. 정규표현식 기초 문법 정리
-    
     4-2. 실습 예제
-    
 5. 💣트러블 슈팅
 6. 🤔고찰
 
@@ -41,12 +30,10 @@
 
 ### 팀원 소개
 
-| <img src=”https://avatars.githubusercontent.com/u/165532198?v=4”
-width=200px alt="김소연"> | <img src="https://avatars.githubusercontent.com/u/103468518?v=4" 
-width=200px alt="김창성"> | <img src="https://avatars.githubusercontent.com/u/193213283?v=4"
-width=200px alt="박진현"> | <img src="https://avatars.githubusercontent.com/u/123963462?v=4" width=200px alt="어태규"> |
-| --- | --- | --- | --- |
-| 김소연 | 김창성 | 박진현 | 어태규 |
+|                                         강릉                                         |                                        당진                                         |                                         대전                                         |                                        천안                                        |
+|:---------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|
+| <img src="https://avatars.githubusercontent.com/u/165532198?v=4" width=200px alt="김소연"> | <img src="https://avatars.githubusercontent.com/u/103468518?v=4" width=200px alt="김창성"> | <img src="https://avatars.githubusercontent.com/u/193213283?v=4" width=200px alt="박진현"> | <img src="https://avatars.githubusercontent.com/u/123963462?v=4" width=200px alt="어태"> |
+|                          [김소연](https://github.com/ssoyeonni)                           |                           [김창성](https://github.com/kcs19)                            |                           [박진현](https://github.com/jinhyunpark929)                            |                          [어태규](https://github.com/EOTAEGYU)                           |
 
 ---
 
