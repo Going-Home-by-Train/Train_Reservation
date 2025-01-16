@@ -1,21 +1,24 @@
-# Train_Reservation
+# 🚆Going Home
+### 기차 예약 시스템 데이터베이스
+<br>
 
 ## 🚦목차
 
 1. 🖥️프로젝트 소개 
 2. 📒설계  
-    2-1. 개발 환경  
-    2-2. 아키텍처  
-    2-3. 테이블 설계   
-3. 🧑‍💻개발  
-    3-1. 데이터베이스 생 및 사용자 생성  
-    3-2. 테이블 생성(DDL)  
-    3-3. 생성형 AI 사용하여 더미데이터 생성 후 데이터 삽입  
+      2-1. 개발 환경  
+      2-2. 아키텍처  
+      2-3.  테이블 설계   
+3. 💻개발  
+      3-1. 데이터베이스 생 및 사용자 생성  
+      3-2. 테이블 생성(DDL)  
+      3-3. 생성형 AI 사용하여 더미데이터 생성 후 데이터 삽입  
 4. 💡정규 표현식 활용  
-    4-1. 정규표현식 기초 문법 정리  
-    4-2. 실습 예제  
+      4-1. 정규표현식 기초 문법 정리  
+      4-2. 실습 예제  
 5. 💣트러블 슈팅 
 6. 🤔고찰 
+<br>
 
 # 1. 🖥️프로젝트 소개
 
@@ -36,6 +39,7 @@
 |                          [김소연](https://github.com/ssoyeonni)                           |                           [김창성](https://github.com/kcs19)                            |                           [박진현](https://github.com/jinhyunpark929)                            |                          [어태규](https://github.com/EOTAEGYU)                           |
 
 ---
+<br>
 
 # 2. 📒설계
 
@@ -114,6 +118,7 @@
     - foreign key : reservations table 의 train_id → trains table 의 train_id 참조
 
 ---
+<br>
 
 # 3. 🧑‍💻개발
 
@@ -188,6 +193,7 @@ FLUSH PRIVILEGES;
 1. DBeaver 에서 IP 주소와 사용자 계정, 비밀번호 입력 후 Test Connection을 눌러 외부 접속이 되는지 확인합니다. 성공!!!
 
 ![Image](https://github.com/user-attachments/assets/168cbffc-0b39-4c42-8148-40f61e114d0a)
+<br>
 
 ## 3-2. 테이블 생성
 
@@ -257,7 +263,7 @@ show tables;
 테이블 조회 결과
 
 ![Image](https://github.com/user-attachments/assets/ab6d5717-4ada-45ac-88d1-e52099159204)
-
+<br> 
 ## 3-3. 생성형 AI 사용하여 더미데이터 생성 후 데이터 INSERT
 
 ChatGPT에게 DDL.sql 파일을 넣고 더미데이터 생성해 달라고 요청합니다! 
@@ -313,8 +319,9 @@ INSERT INTO reservations (train_id, customer_name, customer_email, contact_numbe
 select *
 from reservations;
 ```
+<br>
 
-## 4. 💡정규 표현식 활용 문제
+# 4. 💡정규 표현식 활용
 
 ## 4-1. 정규 표현식 기초 문법
 
@@ -331,8 +338,9 @@ from reservations;
 - **`X(?!Y)`**: Negative Lookahead - X 뒤에 Y가 오지 않는 경우 X만 매치
 
 ---
+<br>
 
-### 4-2. 실습 예제
+## 4-2. 실습 예제
 
 **regular_expression_test.sql 문제 파일 있습니다.**
 
@@ -345,6 +353,7 @@ from reservations;
 5. 부산역을 종착지로 하는 열차의 운행 정보를 조회해야 합니다. 부산에 도착하는 열차의 이름, 출발역 및 주요 정차역을 알려주세요.
 6. 승객 서비스 개선을 위해 중간 정차역에서 탑승하는 승객들의 데이터를 분석하고자 합니다. 출발역이 아닌 중간 정차역에서 탑승한 승객들의 정보를 조회해 주세요.
 7. 새로운 역명 정책으로 인해 '산'이 들어가지 않은 역 이름을 검토해야 합니다. 역 이름에 '산'이라는 글자가 들어가지 않는 모든 기차역 이름을 출력해 주세요.
+<br>
 
 # 5. 💣트러블 슈팅
 
@@ -373,6 +382,7 @@ from reservations;
 ![Image](https://github.com/user-attachments/assets/a6865887-e0ce-4cea-941c-a3a6e3551e54)
 
 ---
+<br>
 
 # 6. 🤔고찰
 
