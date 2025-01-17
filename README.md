@@ -168,7 +168,7 @@ CREATE USER 'username'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON train.* TO 'username'@'%';
 ```
 
-- **`*train*`**: train 데이터베이스 대해 권한 부여
+- **`train.*`**: train 데이터베이스 대해 권한 부여
 - `GRANT ALL PRIVILEGES` 의 역할
     - **데이터베이스 작업 권한**
     - **스키마 작업 권한**
@@ -320,9 +320,6 @@ INSERT INTO reservations (train_id, customer_name, customer_email, contact_numbe
 (5, '박소현', 'parksy@gmail.com', '010-8901-4567', 'E1', '서울', '천안'),
 (5, '한지민', 'hanjm@naver.com', '010-9012-5678', 'E2', '천안', '대전'),
 (5, '이준호', 'leejh@gmail.com', '010-1234-6789', 'E3', '대전', '부산');
-
-select *
-from reservations;
 ```
 <br>
 
