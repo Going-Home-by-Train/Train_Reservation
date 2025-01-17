@@ -79,7 +79,7 @@
 | arrival_time | 도착 시간 | DATETIME |
 | created_at | 생성 시간 | TIMESTAMP |
 | updated_at | 수정 시간 | TIMESTAMP |
-- CONSTRAINS
+- CONSTRAINTS
     - primary key : train_id
     
 
@@ -93,7 +93,7 @@
 | train_id | 기차 ID | INT |
 | station_order | 역 순서 | INT |
 | station_name | 역 이름 | VARCHAR(50) |
-- CONSTRAINS
+- CONSTRAINTS
     - primary key : route_id
     - foreign key : train_routes table의 train_id → trains table의 train_id 참조
     
@@ -113,7 +113,7 @@
 | departure_station | 출발역 | VARCHAR(50) |
 | arrival_station | 도착역 | VARCHAR(50) |
 | reservation_date | 예약 날짜 | DATETIME |
-- CONSTRAINS
+- CONSTRAINTS
     - primary key : reservation_id
     - foreign key : reservations table 의 train_id → trains table 의 train_id 참조
 
