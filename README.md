@@ -165,7 +165,7 @@ CREATE USER 'username'@'%' IDENTIFIED BY 'password';
 새 계정에 MySQL **최고 권한**을 부여합니다.
 
 ```sql
-GRANT ALL PRIVILEGES ON *train* TO 'username'@'%';
+GRANT ALL PRIVILEGES ON train.* TO 'username'@'%';
 ```
 
 - **`*train*`**: train 데이터베이스 대해 권한 부여
