@@ -50,7 +50,7 @@
 - DBeaver
 
 ## 2-2. 아키텍처
-![image](https://github.com/user-attachments/assets/9ca7ab5a-11cb-40fc-9d1c-a76e84872206)
+<img src="https://github.com/user-attachments/assets/9ca7ab5a-11cb-40fc-9d1c-a76e84872206" width ="800">
 
 
 ## 2-3. ERD 설계
@@ -60,8 +60,7 @@
 - trains - 기차 기본 정보
 - train_routes - 기차 노선 정보
 - reservations - 예약 정보
-
-![Image](https://github.com/user-attachments/assets/24f92fb7-cd62-42fe-a777-c5add1f1a76f)
+<img src="https://github.com/user-attachments/assets/24f92fb7-cd62-42fe-a777-c5add1f1a76f" width ="400">
 
 - 기차 예약의 기능을 위해 기차 정보(trains)와 예약 정보(reservations)를 저장하는 두 개의 기본 테이블을 설계하였습니다.
 - 같은 출발지와 목적지를 가진 기차들이 서로 다른 정차역을 경유할 수 있다는 점을 고려하여, 별도의 노선 테이블(train_routes)을 추가하였고, train_routes 테이블의 도입으로 전체 노선 중 승객이 원하는 일부 구간만을 예약할 수 있습니다.
@@ -184,16 +183,14 @@ FLUSH PRIVILEGES;
 ### 5. DBeaver에서 외부 접속 확인하기
 
 1. 데이터베이스가 실행중인 PC 터미널에서 `ip config` 명령을 통해 ip 주소를 조회합니다.
-
-![Image](https://github.com/user-attachments/assets/5c1e5a52-3e41-48a1-8e84-e882df10476b)
+<img src="https://github.com/user-attachments/assets/5c1e5a52-3e41-48a1-8e84-e882df10476b" width ="600">
 
 1. 외부 접속을 위해 포트 포워딩 규칙을 추가하고 호스트 IP 주소에 조회한 IP 주소를 입력합니다.
 
-![Image](https://github.com/user-attachments/assets/f0749d1a-c242-43be-96bc-3b969551296b)
+<img src="https://github.com/user-attachments/assets/f0749d1a-c242-43be-96bc-3b969551296b" width ="600">
 
 1. DBeaver 에서 IP 주소와 사용자 계정, 비밀번호 입력 후 Test Connection을 눌러 외부 접속이 되는지 확인합니다. 성공!!!
-
-![Image](https://github.com/user-attachments/assets/168cbffc-0b39-4c42-8148-40f61e114d0a)
+<img src="https://github.com/user-attachments/assets/168cbffc-0b39-4c42-8148-40f61e114d0a" width ="600">
 <br>
 
 ## 3-2. 테이블 생성
@@ -262,8 +259,7 @@ show tables;
 ```
 
 테이블 조회 결과
-
-![Image](https://github.com/user-attachments/assets/ab6d5717-4ada-45ac-88d1-e52099159204)
+<img src="https://github.com/user-attachments/assets/ab6d5717-4ada-45ac-88d1-e52099159204" width ="600">
 <br> 
 ## 3-3. 생성형 AI 사용하여 더미데이터 생성 후 데이터 INSERT
 
@@ -359,8 +355,7 @@ from reservations;
 # 5. 💣트러블 슈팅
 
 ## 데이터 베이스 외부 접속 오류
-
-![Image](https://github.com/user-attachments/assets/614e0b91-58a6-40a4-91e7-e33ae26fded7)
+<img src="https://github.com/user-attachments/assets/614e0b91-58a6-40a4-91e7-e33ae26fded7" width ="600">
 
 `Communications link failure` 오류는 애플리케이션이 MySQL 서버와 연결하려고 할 때 발생하며, 연결이 이루어지지 않을 때 나타났습니다.
 
@@ -369,18 +364,15 @@ from reservations;
 ### 1. MySQL 서버가 실행 중이지 않음
 
 `sudo system status mysql` 명령을 통해 MySQL이 실행중인 것을 확인했습니다.
-
-![Image](https://github.com/user-attachments/assets/73f42c28-7e85-4e5d-8168-a99b94e888a4)
+<img src="https://github.com/user-attachments/assets/73f42c28-7e85-4e5d-8168-a99b94e888a4" width ="600">
 
 ### 2. 포트포워딩 문제
 
 3306 포트의 호스트 IP가 127.0.0.1 로컬 주소로 되어있어 외부 접속이 안됐던 것이었습니다!
-
-![Image](https://github.com/user-attachments/assets/5e4cf93b-6b37-42b5-8336-ed35ef0aa26e)
+<img src="https://github.com/user-attachments/assets/5e4cf93b-6b37-42b5-8336-ed35ef0aa26e" width ="600">
 
 호스트 IP 주소를 PC IP 주소로 변경하여 설정했더니 외부 접속이 되어 문제가 해결 됐습니다 🎉
-
-![Image](https://github.com/user-attachments/assets/a6865887-e0ce-4cea-941c-a3a6e3551e54)
+<img src="https://github.com/user-attachments/assets/a6865887-e0ce-4cea-941c-a3a6e3551e54" width ="600">
 
 ---
 <br>
