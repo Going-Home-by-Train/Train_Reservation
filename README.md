@@ -50,7 +50,8 @@
 - DBeaver
 
 ## 2-2. 아키텍처
-![Image](https://github.com/user-attachments/assets/bc0694ed-7ab7-474a-b3d2-34000600e420)
+![image](https://github.com/user-attachments/assets/9ca7ab5a-11cb-40fc-9d1c-a76e84872206)
+
 
 ## 2-3. ERD 설계
 
