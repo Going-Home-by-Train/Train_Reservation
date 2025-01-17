@@ -259,7 +259,8 @@ show tables;
 ```
 
 테이블 조회 결과
-<img src="https://github.com/user-attachments/assets/ab6d5717-4ada-45ac-88d1-e52099159204" width ="600">
+
+<img src="https://github.com/user-attachments/assets/ab6d5717-4ada-45ac-88d1-e52099159204" width ="400">
 <br> 
 ## 3-3. 생성형 AI 사용하여 더미데이터 생성 후 데이터 INSERT
 
