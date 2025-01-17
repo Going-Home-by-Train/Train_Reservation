@@ -69,53 +69,47 @@
 
  각 기차에 대한 기본 정보가 저장되어 있습니다.
 
-| **칼럼명** | **설명** | **데이터 타입** |
-| --- | --- | --- |
-| train_id | 기차 ID | INT |
-| train_name | 기차 이름 | VARCHAR(50) |
-| departure_station | 출발역 | VARCHAR(50) |
-| arrival_station | 도착역 | VARCHAR(50) |
-| departure_time | 출발 시간 | DATETIME |
-| arrival_time | 도착 시간 | DATETIME |
-| created_at | 생성 시간 | TIMESTAMP |
-| updated_at | 수정 시간 | TIMESTAMP |
-- CONSTRAINTS
-    - primary key : train_id
+| **칼럼명** | **설명** | **데이터 타입** | **제약 조건** |
+| --- | --- | --- |--- |
+| train_id | 기차 ID | INT | primary key |
+| train_name | 기차 이름 | VARCHAR(50) | |
+| departure_station | 출발역 | VARCHAR(50) | |
+| arrival_station | 도착역 | VARCHAR(50) | |
+| departure_time | 출발 시간 | DATETIME | |
+| arrival_time | 도착 시간 | DATETIME | |
+| created_at | 생성 시간 | TIMESTAMP | |
+| updated_at | 수정 시간 | TIMESTAMP | |
+
     
 
 ### train_routes
 
 기차가 경유하는 모든 역에 대한 정보가 저장되어 있습니다.
 
-| **칼럼명** | **설명** | **데이터 타입** |
-| --- | --- | --- |
-| route_id | 노선 ID | INT |
-| train_id | 기차 ID | INT |
-| station_order | 역 순서 | INT |
-| station_name | 역 이름 | VARCHAR(50) |
-- CONSTRAINTS
-    - primary key : route_id
-    - foreign key : train_routes table의 train_id → trains table의 train_id 참조
-    
+| **칼럼명** | **설명** | **데이터 타입** | **제약 조건** |
+| --- | --- | --- | --- |
+| route_id | 노선 ID | INT | primary key |
+| train_id | 기차 ID | INT | foreign key(trains) |
+| station_order | 역 순서 | INT | |
+| station_name | 역 이름 | VARCHAR(50) | |
+
 
 ### reservations
 
 사용자가 기차를 예약한 정보가 저장되어 있습니다.
 
-| **칼럼명** | **설명** | **데이터 타입** |
-| --- | --- | --- |
-| reservation_id | 예약 ID | INT |
-| train_id | 기차 ID | INT |
-| customer_name | 예약자 이름 | VARCHAR(50) |
-| customer_email | 예약자 이메일 | VARCHAR(100) |
-| contact_number | 연락처 | VARCHAR(15) |
-| seat_number | 좌석 번호 | VARCHAR(10) |
-| departure_station | 출발역 | VARCHAR(50) |
-| arrival_station | 도착역 | VARCHAR(50) |
-| reservation_date | 예약 날짜 | DATETIME |
-- CONSTRAINTS
-    - primary key : reservation_id
-    - foreign key : reservations table 의 train_id → trains table 의 train_id 참조
+| **칼럼명** | **설명** | **데이터 타입** | **제약 조건** |
+| --- | --- | --- | --- |
+| reservation_id | 예약 ID | INT |  primary key |
+| train_id | 기차 ID | INT | foreign key(trains) |
+| customer_name | 예약자 이름 | VARCHAR(50) | |
+| customer_email | 예약자 이메일 | VARCHAR(100) | |
+| contact_number | 연락처 | VARCHAR(15) | |
+| seat_number | 좌석 번호 | VARCHAR(10) | |
+| departure_station | 출발역 | VARCHAR(50) | |
+| arrival_station | 도착역 | VARCHAR(50) | |
+| reservation_date | 예약 날짜 | DATETIME | |
+
 
 ---
 <br><br><br><br>
