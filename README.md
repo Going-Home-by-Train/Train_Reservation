@@ -1,6 +1,6 @@
 # 🚆Going Home
-### 기차 예약 시스템 데이터베이스
-<br>
+**기차 예약 시스템 데이터베이스**
+<br><br>
 
 ## 🚦목차
 
@@ -348,7 +348,7 @@ INSERT INTO reservations (train_id, customer_name, customer_email, contact_numbe
 
 **당신은 철도공사의 데이터베이스 관리자입니다. 기차 운행 정보(trains), 노선 정보(train_routes), 예약 정보(reservations)를 관리하고 있습니다. 오늘 다음과 같은 업무를 처리해야 합니다.**
   
-### 문제 1  
+### ✏문제 1  
 고객 서비스팀에서 박민수 씨의 예약 정보 확인을 요청했습니다. 박민수가 예약한 열차명과 좌석 번호를 조회해 주세요.  
 <details>
 <summary> 정답</summary>
@@ -363,7 +363,7 @@ WHERE r.customer_name REGEXP '^박민수$';
 </details>
 <br>
 
-### 문제 2  
+### ✏문제 2  
 더 이상 사용할 수 없는 이메일 도메인이 있다고 합니다. hanmail.net으로 가입한 고객들의 정보를 모두 추출해 주세요.  
 <details>
 <summary> 정답</summary>
@@ -378,7 +378,7 @@ WHERE customer_email REGEXP '@hanmail\\.net$';
 </details>
 <br>
 
-### 문제 3  
+### ✏문제 3  
 태풍으로 인해 일부 열차가 지연되었습니다. 오전 10시 이후 출발하는 모든 열차의 출발 시간과 도착 시간이 30분씩 지연된 것을 데이터에 적용해 주세요.  
 <details>
 <summary> 정답</summary>
@@ -395,7 +395,7 @@ WHERE departure_time REGEXP '\\d{4}-\\d{2}-\\d{2} (1[0-9]|2[0-3]):\\d{2}:\\d{2}'
 </details>
 <br>
 
-### 문제 4  
+### ✏문제 4  
 폭설로 인해 기차역 입구에 정체 현상이 있음을 일부 고객에게 알려야 합니다. 오전 9시 이전(9시 포함) 출발 열차의 예약자 연락처를 찾아주세요.  
 <details>
 <summary> 정답</summary>
@@ -411,7 +411,7 @@ WHERE t.departure_time REGEXP '^\\d{4}-\\d{2}-\\d{2} 0[0-9]:';
 </details>
 <br>
 
-### 문제 5  
+### ✏문제 5  
 부산역을 종착지로 하는 열차의 운행 정보를 조회해야 합니다. 부산에 도착하는 열차의 이름, 출발역 및 주요 정차역을 알려주세요.  
 <details>
 <summary> 정답</summary>
@@ -428,7 +428,7 @@ WHERE t.arrival_station = '부산'
 </details>
 <br>
 
-### 문제 6  
+### ✏문제 6  
 승객 서비스 개선을 위해 중간 정차역에서 탑승하는 승객들의 데이터를 분석하고자 합니다. 출발역이 아닌 중간 정차역에서 탑승한 승객들의 정보를 조회해 주세요.  
 <details>
 <summary> 정답</summary>
@@ -444,7 +444,7 @@ WHERE r.departure_station NOT REGEXP CONCAT('^', t.departure_station, '$');
 </details>
 <br>
 
-### 문제 7  
+### ✏문제 7  
 새로운 역명 정책으로 인해 '산'이 들어가지 않은 역 이름을 검토해야 합니다. 역 이름에 '산'이라는 글자가 들어가지 않는 모든 기차역 이름을 출력해 주세요.  
 <details>
 <summary> 정답</summary>
