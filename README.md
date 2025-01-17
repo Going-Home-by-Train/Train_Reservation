@@ -358,7 +358,7 @@ from reservations;
 ## 데이터 베이스 외부 접속 오류
 <img src="https://github.com/user-attachments/assets/614e0b91-58a6-40a4-91e7-e33ae26fded7" width ="600">
 
-`Communications link failure` 오류는 애플리케이션이 MySQL 서버와 연결하려고 할 때 발생하며, 연결이 이루어지지 않을 때 나타났습니다.
+`Communications link failure` 오류는 애플리케이션이 MySQL 서버와 연결하려고 할 때 발생하며, 연결이 이루어지지 않을 때 나타납니다.
 
 오류 원인으로는 2가지 정도로 예상됩니다.
 
