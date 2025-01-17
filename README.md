@@ -197,8 +197,7 @@ FLUSH PRIVILEGES;
 <img src="https://github.com/user-attachments/assets/f0749d1a-c242-43be-96bc-3b969551296b" width ="600">
 
  - DBeaver 에서 IP 주소와 사용자 계정, 비밀번호 입력 후 Test Connection을 눌러 외부 접속이 되는지 확인합니다. 성공!!!
-<img src="https://github.com/user-attachments/assets/168cbffc-0b39-4c42-8148-40f61e114d0a" width ="600">
-<br><br>
+<img src="https://github.com/user-attachments/assets/dfdc4d9e-5d96-40e3-a2bb-83870e875845" width ="600">
 
 ## 3-2. 테이블 생성
 
