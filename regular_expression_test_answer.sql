@@ -60,7 +60,7 @@ SELECT DISTINCT t.train_name, tr.station_name
 FROM train_routes tr
 JOIN trains t ON tr.train_id = t.train_id
 WHERE t.arrival_station = '부산'
-  AND tr.station_name REGEXP '^(?!부산$).*$';
+  AND tr.station_name REGEXP '^(?!부산$)';
       
 
 -- 기차 출발역가 아닌 중간 정차역에서 탑승하는 사람을 검색하시요.
