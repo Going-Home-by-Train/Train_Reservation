@@ -4,21 +4,21 @@
 
 ## 🚦 목차
 
-1. 🖥️ 프로젝트 소개 
-2. 📒 설계  
-      2-1. 개발 환경  
-      2-2. 아키텍처  
-      2-3.  테이블 설계   
-3. 💻 개발  
-      3-1. 데이터베이스 생 및 사용자 생성  
-      3-2. 테이블 생성(DDL)  
-      3-3. 생성형 AI 사용하여 더미데이터 생성 후 데이터 삽입  
-4. 💡 정규 표현식 활용  
-      4-1. 정규표현식 기초 문법 정리  
-      4-2. 실습 예제  
-5. 💣 트러블 슈팅 
-6. 🤔 고찰 
-<br>
+**1. 🖥️ 프로젝트 소개**  
+**2. 📒 설계**  
+　　　**2-1.** 개발 환경  
+　　　**2-2.** 아키텍처  
+　　　**2-3.**  테이블 설계   
+**3. 💻 개발**  
+　　　**3-1.** 데이터베이스 생 및 사용자 생성  
+　　　**3-2.** 테이블 생성(DDL)  
+　　　**3-3.** 생성형 AI 사용하여 더미데이터 생성 후 데이터 삽입  
+**4. 💡 정규 표현식 활용**  
+　　　**4-1.** 정규표현식 기초 문법 정리  
+　　　**4-2.** 실습 예제  
+**5. 💣 트러블 슈팅**  
+**6. 🤔 고찰** 
+<br><br>
 
 # 1. 🖥️프로젝트 소개
 
@@ -346,6 +346,8 @@ INSERT INTO reservations (train_id, customer_name, customer_email, contact_numbe
 
 **regular_expression_test.sql 문제 파일 있습니다.**
 
+&nbsp;
+
 **🕵️‍♂️당신은 철도공사의 데이터베이스 관리자입니다. 기차 운행 정보(trains), 노선 정보(train_routes), 예약 정보(reservations)를 관리하고 있습니다. 오늘 다음과 같은 업무를 처리해야 합니다.**
   
 ### ✏문제 1  
@@ -360,8 +362,7 @@ JOIN trains t ON r.train_id = t.train_id
 WHERE r.customer_name REGEXP '^박민수$';
 
 ```
-</details>
-<br>
+</details>&nbsp;
 
 ### ✏문제 2  
 더 이상 사용할 수 없는 이메일 도메인이 있다고 합니다. hanmail.net으로 가입한 고객들의 정보를 모두 추출해 주세요.  
@@ -374,9 +375,7 @@ FROM reservations
 WHERE customer_email REGEXP '@hanmail\\.net$';
 
 ```
-</details>
-</details>
-<br>
+</details>&nbsp;
 
 ### ✏문제 3  
 태풍으로 인해 일부 열차가 지연되었습니다. 오전 10시 이후 출발하는 모든 열차의 출발 시간과 도착 시간이 30분씩 지연된 것을 데이터에 적용해 주세요.  
@@ -391,9 +390,7 @@ FROM trains
 WHERE departure_time REGEXP '\\d{4}-\\d{2}-\\d{2} (1[0-9]|2[0-3]):\\d{2}:\\d{2}';
 
 ```
-</details>
-</details>
-<br>
+</details>&nbsp;
 
 ### ✏문제 4  
 폭설로 인해 기차역 입구에 정체 현상이 있음을 일부 고객에게 알려야 합니다. 오전 9시 이전(9시 포함) 출발 열차의 예약자 연락처를 찾아주세요.  
@@ -407,9 +404,8 @@ JOIN trains t ON r.train_id = t.train_id
 WHERE t.departure_time REGEXP '^\\d{4}-\\d{2}-\\d{2} 0[0-9]:';
 
 ```
-</details>
-</details>
-<br>
+</details>&nbsp;
+ 
 
 ### ✏문제 5  
 부산역을 종착지로 하는 열차의 운행 정보를 조회해야 합니다. 부산에 도착하는 열차의 이름, 출발역 및 주요 정차역을 알려주세요.  
@@ -424,9 +420,8 @@ WHERE t.arrival_station = '부산'
   AND tr.station_name REGEXP '^(?!부산).*$';
 
 ```
-</details>
-</details>
-<br>
+</details>&nbsp;
+
 
 ### ✏문제 6  
 승객 서비스 개선을 위해 중간 정차역에서 탑승하는 승객들의 데이터를 분석하고자 합니다. 출발역이 아닌 중간 정차역에서 탑승한 승객들의 정보를 조회해 주세요.  
@@ -440,9 +435,8 @@ JOIN trains t ON r.train_id = t.train_id
 WHERE r.departure_station NOT REGEXP CONCAT('^', t.departure_station, '$');
 
 ```
-</details>
-</details>
-<br>
+</details>&nbsp;
+
 
 ### ✏문제 7  
 새로운 역명 정책으로 인해 '산'이 들어가지 않은 역 이름을 검토해야 합니다. 역 이름에 '산'이라는 글자가 들어가지 않는 모든 기차역 이름을 출력해 주세요.  
@@ -455,9 +449,8 @@ FROM train_routes
 WHERE station_name NOT REGEXP '산';
 
 ```
-</details>
-</details>
-<br>
+</details>&nbsp;
+  
 
 # 5. 💣트러블 슈팅
 
