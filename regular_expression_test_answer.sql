@@ -60,17 +60,7 @@ SELECT DISTINCT t.train_name, tr.station_name
 FROM train_routes tr
 JOIN trains t ON tr.train_id = t.train_id
 WHERE t.arrival_station = '부산'
-  AND tr.station_name REGEXP '^(?!부산$).*$';
-
-
--- 'KTX' 열차 중 서울에서 출발하여 부산에 도착하는 열차의 모든 정차역을 순서대로 나열하세요. 단, 열차 이름에 숫자가 홀수인 열차만 선택하세요.
--- SELECT t.train_id, t.train_name, tr.station_order, tr.station_name,
---            t.departure_time, t.arrival_time
--- FROM trains t
--- JOIN train_routes tr ON t.train_id = tr.train_id
--- WHERE t.train_name REGEXP '^KTX-[13579]'
---       AND t.departure_station = '서울'
---       AND t.arrival_station = '부산'
+  AND tr.station_name REGEXP '^(?!부산$)';
       
 
 -- 기차 출발역가 아닌 중간 정차역에서 탑승하는 사람을 검색하시요.
