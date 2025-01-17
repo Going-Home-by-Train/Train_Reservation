@@ -180,6 +180,13 @@ GRANT ALL PRIVILEGES ON *train* TO 'username'@'%';
 FLUSH PRIVILEGES;
 ```
 
+#### 조회만 가능한 테스트 계정 생성
+```sql
+CREATE USER 'test01'@'%' IDENTIFIED BY 'test01';
+GRANT SELECT ON train.* TO '%'@'localhost';
+FLUSH PRIVILEGES;
+```
+
 ### 5. DBeaver에서 외부 접속 확인하기
 
 1. 데이터베이스가 실행중인 PC 터미널에서 `ip config` 명령을 통해 ip 주소를 조회합니다.
