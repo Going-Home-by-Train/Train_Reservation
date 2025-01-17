@@ -346,7 +346,7 @@ INSERT INTO reservations (train_id, customer_name, customer_email, contact_numbe
 
 **regular_expression_test.sql 문제 파일 있습니다.**
 
-**당신은 철도공사의 데이터베이스 관리자입니다. 기차 운행 정보(trains), 노선 정보(train_routes), 예약 정보(reservations)를 관리하고 있습니다. 오늘 다음과 같은 업무를 처리해야 합니다.**
+**🕵️‍♂️당신은 철도공사의 데이터베이스 관리자입니다. 기차 운행 정보(trains), 노선 정보(train_routes), 예약 정보(reservations)를 관리하고 있습니다. 오늘 다음과 같은 업무를 처리해야 합니다.**
   
 ### ✏문제 1  
 고객 서비스팀에서 박민수 씨의 예약 정보 확인을 요청했습니다. 박민수가 예약한 열차명과 좌석 번호를 조회해 주세요.  
