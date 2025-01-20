@@ -39,7 +39,6 @@
 |                          [김소연](https://github.com/ssoyeonni)                           |                           [김창성](https://github.com/kcs19)                            |                           [박진현](https://github.com/jinhyunpark929)                            |                          [어태규](https://github.com/EOTAEGYU)                           |
 
 ---
-<br><br><br><br>
 
 # 2. 📒설계
 
@@ -112,7 +111,7 @@
 
 
 ---
-<br><br><br><br>
+
 
 # 3. 🧑‍💻개발
 
@@ -334,7 +333,6 @@ COMMIT -- 수정 후 커밋 필수!
 - **`X(?!Y)`**: Negative Lookahead - X 뒤에 Y가 오지 않는 경우 X만 매치
 
 ---
-<br><br>
 
 ## 4-2. 실습 예제
 
